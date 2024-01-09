@@ -7,7 +7,7 @@ const Feed = () => {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/post')
+        fetch('https://twitter-deploy-backend.vercel.app/post')
         .then(res => res.json())
         .then(data => {
             setPosts(data)
